@@ -2,6 +2,7 @@ import './App.css';
 import { Routes, Route} from 'react-router-dom';
 import { Box } from '@mui/material';
 import Exercises from './pages/Exercises';
+import MakePost from './pages/MakePost';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path = "/" element={<Home />} />
           <Route path = "/exercise/:id" element={<Exercises />} />
+          <Route path = "/create-post/" element={<MakePost />} />
         </Routes>
       <Footer />
       </Box>
