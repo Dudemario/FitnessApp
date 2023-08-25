@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+import ListExercises from '../components/ListExercises';
+import SearchExercises from '../components/SearchExercises';
+import { Box } from '@mui/material';
 
 const Exercises = () => {
   return (
-    <div>Exercises</div>
+    <Box>
+      <SearchExercises />
+      <ListExercises />
+    </Box>
   )
 }
 
