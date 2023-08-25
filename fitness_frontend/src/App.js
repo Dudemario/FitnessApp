@@ -1,5 +1,5 @@
 import './App.css';
-import {Routes, Route} from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import { Box } from '@mui/material';
 import Exercises from './pages/Exercises';
 import MakePost from './pages/MakePost';
