@@ -1,6 +1,7 @@
 import './App.css';
 import { Routes, Route} from 'react-router-dom';
 import { Box } from '@mui/material';
+import IndividualExercises from './pages/IndividualExercises';
 import Exercises from './pages/Exercises';
 import MakePost from './pages/MakePost';
 import Home from './pages/Home';
@@ -15,7 +16,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path = "/" element={<Home />} />
-          <Route path = "/exercise/:id" element={<Exercises />} />
+          <Route path = "/exercises" element={<Exercises />} />
+          <Route path = "/exercise/:id" element={<IndividualExercises />} />
           <Route path = "/create-post/" element={<MakePost />} />
         </Routes>
       <Footer />
